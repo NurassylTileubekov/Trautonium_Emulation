@@ -1,4 +1,5 @@
-Project Description:
+
+--------------------------------------------------------------PROJECT DESCRIPTION--------------------------------------------------------------
 1. Sawtooth Oscillator for core sound generation.
   1.1. Oscillator volume control using an encoder. Up to 80 % it works like a normal volume control. If set higher it will go into distortion mode
 2. Frequency Control via:
@@ -21,7 +22,7 @@ Project Description:
 6. Master Volume Control via a single Potentiometer.
 
 
-Course of work:
+--------------------------------------------------------------COURSE OF WORK--------------------------------------------------------------
 1. Implemented Sawtooth Wave Generation
   Developed the core function for generating a basic sawtooth waveform.
 2. Integrated Analog Inputs for Control
@@ -54,6 +55,6 @@ Course of work:
   Moving Average Filter to smooth out signal fluctuations
   Noise Gate to suppress low-level residual noise caused by aliasing
 
-Used components:
-7 potentiometers, 1 membrane pot, 1 pressure sensor, 1x4 keypad, 4x4 keypad, STM32F407G-DISC1 board, 2 encoders.
 
+--------------------------------------------------------------USED COMPONENTS--------------------------------------------------------------
+7 potentiometers, 1 membrane pot, 1 pressure sensor, 1x4 keypad, 4x4 keypad, STM32F407G-DISC1 board, 2 encoders.
