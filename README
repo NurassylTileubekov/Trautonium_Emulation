@@ -1,0 +1,55 @@
+Project Description:
+1. Sawtooth Oscillator for core sound generation.
+  1.1. Oscillator volume control using an encoder. Up to 80 % it works like a normal volume control. If set higher it will go into distortion mode
+2. Frequency Control via:
+  2.1. Membrane Potentiometer
+  2.2. Four Octave Shift Buttons
+  2.3. Optional Scale Quantization (e.g., fixed to piano notes)
+    2.3.1 Portamento(note sliding) is controlled using an encoder
+3. Amplitude Control using a Pressure Sensor.
+4. Pre-Switch Filter for frequency cutoff:
+  4.1. Selectable cutoff at 100 Hz or 500 Hz
+  4.2. Mode switch to toggle between cutoff frequencies
+5. Formant Filter Section with two identical filters:
+  5.1. Each filter can be individually enabled or disabled
+  5.2. Each filter includes:
+    5.2.1. Volume Potentiometer. Up to 80 % it works like a normal volume control. If set higher it will go into distortion mode
+    5.2.2. Frequency Potentiometer
+    5.2.3. Resonance Potentiometer
+    5.2.4. Cutoff Frequency Range Switch (640 Hz or 6 kHz)
+    5.2.5. Mode Switch (Bandpass or Lowpass)
+6. Master Volume Control via a single Potentiometer.
+
+
+Course of work:
+1. Implemented Sawtooth Wave Generation
+  Developed the core function for generating a basic sawtooth waveform.
+2. Integrated Analog Inputs for Control
+  Connected and configured analog inputs to:
+    Control frequency using a membrane potentiometer
+    Control amplitude using a pressure sensor
+3. Added 1x4 Keypad for Octave Selection
+  Implemented a keypad interface allowing octave shifts via four dedicated buttons.
+4. Developed PolyBLEP Function for Antialiasing
+  Wrote a PolyBLEP (Polynomial Band-Limited Step) algorithm to reduce aliasing artifacts in the sawtooth oscillator.
+5. Wrote First-Order IIR Filter for Pre-Switch Filtering
+  Created a simple IIR filter for low-pass filtering at 100 Hz or 500 Hz, selectable via switch.
+6. Implemented Timer for Button Debouncing
+  Prevented false triggers and ensured accurate input readings by adding a timer-based debouncing function.
+7. Created Formant Filter Functions
+  Designed and implemented second-order IIR filters for formant filtering.
+  Enabled control of volume, frequency, and resonance.
+8. Added Additional Analog Inputs
+  Connected further potentiometers for the formant filters and master volume control.
+9. Implemented 4x4 Keypad
+  Expanded the user input interface to a 4x4 keypad for additional controls and modes.
+10. Integrated Rotary Encoders
+  Added two encoders:
+    One for oscillator volume (including distortion mode above 80%)
+    One for portamento (note sliding) control
+11. Wrote Soft Clipping Function
+  Implemented a soft clipping (distortion) algorithm used when volume exceeds 80%.
+12. Developed Noise Reduction Functions
+  Added:
+  Moving Average Filter to smooth out signal fluctuations
+  Noise Gate to suppress low-level residual noise caused by aliasing
