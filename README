@@ -1,5 +1,5 @@
 
---------------------------------------------------------------PROJECT DESCRIPTION--------------------------------------------------------------
+-----------------------------------------------------PROJECT DESCRIPTION-----------------------------------------------------
 1. Sawtooth Oscillator for core sound generation.
   1.1. Oscillator volume control using an encoder. Up to 80 % it works like a normal volume control. If set higher it will go into distortion mode
 2. Frequency Control via:
