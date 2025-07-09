@@ -53,3 +53,7 @@ Course of work:
   Added:
   Moving Average Filter to smooth out signal fluctuations
   Noise Gate to suppress low-level residual noise caused by aliasing
+
+Used components:
+7 potentiometers, 1 membrane pot, 1 pressure sensor, 1x4 keypad, 4x4 keypad, STM32F407G-DISC1 board, 2 encoders.
+
